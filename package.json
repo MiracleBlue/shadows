@@ -1,9 +1,9 @@
 {
   "name": "@valkyrie-js/shadows",
   "version": "0.0.0",
-  "description": "> TODO: description",
+  "description": "An experimental parser engine",
   "author": "Nicholas Kircher <MiracleBlue@users.noreply.github.com>",
-  "homepage": "https://github.com/MiracleBlue/valkyrie#readme",
+  "homepage": "https://github.com/MiracleBlue/shadows",
   "license": "MIT",
   "main": "dist/index.js",
   "publishConfig": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MiracleBlue/valkyrie.git"
+    "url": "git+https://github.com/MiracleBlue/shadows.git"
   },
   "scripts": {
     "compile": "rm -rf ./dist; webpack --config ./webpack.config.js",
@@ -21,7 +21,7 @@
     "test:watch": "cross-env NODE_ENV=test jest '.spec.ts' --watch"
   },
   "bugs": {
-    "url": "https://github.com/MiracleBlue/valkyrie/issues"
+    "url": "https://github.com/MiracleBlue/shadows/issues"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",

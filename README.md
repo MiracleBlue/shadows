@@ -1,11 +1,5 @@
 # `@valkyrie-js/shadows`
 
-> TODO: description
+CURRENTLY EXPERIMENTAL, NOT READY FOR USAGE
 
-## Usage
-
-```js
-const shadows = require('@valkyrie-js/shadows');
-
-// TODO: DEMONSTRATE API
-```
+Documentation is not currently available, but I hope to put some together when time permits.
