@@ -5,7 +5,7 @@
   "author": "Nicholas Kircher <MiracleBlue@users.noreply.github.com>",
   "homepage": "https://github.com/MiracleBlue/shadows",
   "license": "MIT",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "publishConfig": {
     "access": "public"
   },
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/MiracleBlue/shadows.git"
   },
   "scripts": {
-    "compile": "rm -rf ./dist; webpack --config ./webpack.config.js",
+    "compile": "rm -rf ./lib; webpack --config ./webpack.config.js && webpack --config ./webpack.node.config.js",
     "build": "cross-env NODE_ENV=production yarn run compile",
     "build:dev": "cross-env NODE_ENV=development yarn run compile",
     "test": "cross-env NODE_ENV=test jest '.spec.ts' --colors",

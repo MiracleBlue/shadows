@@ -20,9 +20,10 @@ const libraryOutput = (filename) => setOutput({
 
 module.exports = createConfig([
   mode,
+  customConfig({ target: 'node' }),
   typescript(),
   entryPoint('./src/index.ts'),
-  libraryOutput('lib/index.js'),
+  libraryOutput('lib/node/index.js'),
   customConfig({
     externals: [nodeExternals({
       // modulesFromFile: true
