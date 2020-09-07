@@ -1,6 +1,6 @@
 {
   "name": "@valkyrie-js/shadows",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "An experimental parser engine",
   "author": "Nicholas Kircher <MiracleBlue@users.noreply.github.com>",
   "homepage": "https://github.com/MiracleBlue/shadows",
