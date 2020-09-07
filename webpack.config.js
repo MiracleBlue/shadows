@@ -15,7 +15,8 @@ const libraryOutput = (filename) => setOutput({
   path: __dirname,
   filename,
   library: '@valkyrie-js/shadows',
-  libraryTarget: 'umd'
+  libraryTarget: 'umd',
+  globalObject: 'this'
 })
 
 module.exports = createConfig([
