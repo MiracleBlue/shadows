@@ -6,6 +6,10 @@
   "homepage": "https://github.com/MiracleBlue/shadows",
   "license": "MIT",
   "main": "lib/index.js",
+  "module": "lib/esm/index.js",
+  "jsnext:main": "lib/esm/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": "false",
   "publishConfig": {
     "access": "public"
   },
@@ -14,7 +18,7 @@
     "url": "git+https://github.com/MiracleBlue/shadows.git"
   },
   "scripts": {
-    "compile": "rm -rf ./lib; webpack --config ./webpack.config.js && webpack --config ./webpack.node.config.js",
+    "compile": "rm -rf ./lib; tsc && tsc -P tsconfig.module.json",
     "build": "cross-env NODE_ENV=production yarn run compile",
     "build:dev": "cross-env NODE_ENV=development yarn run compile",
     "test": "cross-env NODE_ENV=test jest '.spec.ts' --colors",
@@ -30,11 +34,7 @@
     "jest": "^24.7.1",
     "release-it": "^14.0.2",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.4.4",
-    "webpack": "^4.30.0",
-    "webpack-blocks": "^2.0.0",
-    "webpack-cli": "^3.3.5",
-    "webpack-node-externals": "^1.7.2"
+    "typescript": "^3.4.4"
   },
   "dependencies": {
     "fp-ts": "^1.19.3",
